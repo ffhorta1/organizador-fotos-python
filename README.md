@@ -27,3 +27,25 @@ Instale com:
 
 ```bash
 pip install Pillow
+
+
+## 🚀 Como usar
+python organizador_fotos.py CAMINHO_DA_PASTA [--data exif|modificacao|criacao] [--acao mover|copiar] [--estrutura ano|ano/mes]
+
+## 📚 Exemplos:
+Fotos por data EXIF:
+python organizador_fotos.py ./minhas_fotos --data exif --acao copiar --estrutura ano/mes
+
+Documentos por data de modificação:
+python organizador_fotos.py ./documentos --data modificacao --acao mover --estrutura ano
+
+## 🧠 Observações
+- Para fotos, recomenda-se usar --data exif.
+
+- Arquivos sem data válida são ignorados com aviso no terminal.
+
+- Os nomes dos meses estão em português e podem ser ajustados no código-fonte, se necessário.
+
+## 💻 Autor
+Desenvolvido por Fernando Horta como parte de um projeto pessoal de automação com Python.
+
